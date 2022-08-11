@@ -1,16 +1,16 @@
 <div align="center">
   <h1> 30 Days Of React: Getting Started React</h1>
-  <a class="header-badge" target="_blank" href="/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  <!-- <a class="header-badge" target="_blank" href="/"> -->
+  <!-- <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social"> -->
   </a>
   <a class="header-badge" target="_blank" href="">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <!-- <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social"> -->
   </a>
 
-<sub>Author:
+<!-- <sub>Author:
 <a href="/" target="_blank">Ritik Masand</a><br>
 <small> August, 2022</small>
-</sub>
+</sub> -->
 
 </div>
 
