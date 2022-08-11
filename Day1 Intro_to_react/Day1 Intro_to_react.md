@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 1](../01_Day_JavaScript_Refresher/01_javascript_refresher.md) | [Day 3 >>](../03_Day_Setting_Up/03_setting_up.md)
+<!-- [<< Day 1](../01_Day_JavaScript_Refresher/01_javascript_refresher.md) | [Day 3 >>](../03_Day_Setting_Up/03_setting_up.md) -->
 
 ![30 Days of React banner](../Images/react_intro.jpg)
 
