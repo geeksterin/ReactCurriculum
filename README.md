@@ -1,5 +1,5 @@
 <div>
-<img align="right" width="100%"  src="./Images/react_intro.jpg" />
+<img align="right" width="100%"  src="./Images/react_intro.png" />
 </div>
 
 <div align="center">
