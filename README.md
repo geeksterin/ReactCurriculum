@@ -17,7 +17,7 @@
 <small> August, 2022</small></sub>
 
 </div>
-
+`
 [Day 1 >>](./Day1_Intro_to_react.md)
 
 | # Day |                                                           Topics                                                            |
