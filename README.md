@@ -1,5 +1,5 @@
 <div>
-<img align="right" width="100%"  src="./Images/react_intro.png" />
+<img align="right" width="100%"  src="./images/react_intro.png" />
 </div>
 
 <div align="center">
@@ -17,8 +17,8 @@
 <small> August, 2022</small></sub>
 
 </div>
-`
-[Day 1 >>](./Day1_Intro_to_react.md)
+
+[Day 1 >>](./Day1_Intro_to_react)
 
 | # Day |                                                           Topics                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
