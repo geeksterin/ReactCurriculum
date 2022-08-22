@@ -110,7 +110,7 @@ Here's an example of a React js resume sample illustrating a correctly written p
 We will now show you how to do this. Let's begin.
 
 
-#  Spruce Up Your Professional Experience Section
+# 3. Spruce Up Your Professional Experience Section
 
 The professional experience section is the heart and soul of your React js developer resume.
 
