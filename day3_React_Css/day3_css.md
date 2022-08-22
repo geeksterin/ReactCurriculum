@@ -29,7 +29,7 @@ There is no #1 way to approach to writing styles in React for every project. Eve
 That's why at the end of each section, I will cover the pros and cons of each approach to help you choose which is the best for you in your projects.
 Let's get started!
 
-![30 Days of React banner](../images\css_react.jpg)
+![30 Days of React banner](../images/css_react.jpg)
 
 
 # 1. Inline Styles
@@ -306,7 +306,7 @@ With that being said, there are a number of CSS libraries that give us all the p
 6. Must use a reliable naming convention to ensure styles don't conflict
 
 # 3. Sass Scss
-![30 Days of React banner](../images\sass.jpg)
+![30 Days of React banner](../images/sass.jpg)
 
 What is SASS? SASS is an acronym that stands for: Syntactically Awesome Style Sheets.
 
@@ -537,7 +537,7 @@ export default function App() {
   );
 }
 ```
-![30 Days of React banner](../images\click.jpeg)
+![30 Days of React banner](../images/click.jpeg)
 
 Note a few things here:
 
@@ -581,7 +581,7 @@ In the return of the function, you can select the inverted prop and use a ternar
 
 Here is the result:
 
-![30 Days of React banner](../images\click_clickme.jpeg)
+![30 Days of React banner](../images/click_clickme.jpeg)
 
 There are a great deal more benefits to using a CSS-in-JS library to style your React applications (too many to cover here), some of which I will list below.
 
