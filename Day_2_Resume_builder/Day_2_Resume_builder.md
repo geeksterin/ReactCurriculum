@@ -255,3 +255,5 @@ Some of the components are given below:
 
 
 🎉 CONGRATULATIONS ! 🎉
+
+[<< Day 1](../Day1_Intro_to_react/Day1_Intro_to_react.md) | [Day 3 >>](../day3_React_css/day3_css.md)

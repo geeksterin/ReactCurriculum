@@ -612,6 +612,7 @@ I hope this guide gave you a good understanding of how to style your React apps 
 # Exercises
 
 ## Try to implement the above mentioned styling methods in your next react project and see which one suits you the best.
+[<< Day 2](../Day_2_Resume_builder/Day_2_Resume_builder.md) | [Day 4 >>](../Day_4_props/Day_4_props.md)
 
 
 🎉 CONGRATULATIONS ! 🎉

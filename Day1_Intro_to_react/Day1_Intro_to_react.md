@@ -1599,4 +1599,7 @@ Now, you have a very good understanding of how to create JSX elements and also h
 
 1. Practice how to make JSX element and injecting dynamic data(string, number, boolean, array, object)
 
+
 🎉 CONGRATULATIONS ! 🎉
+
+[Day 2 >>](../Day_2_Resume_builder/Day_2_Resume_builder.md)
