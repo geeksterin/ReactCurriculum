@@ -13,9 +13,9 @@
 - [Different ways to style your react app](#different-ways-to-style-your-react-app)
   - [1. Inline Styles](#1-inline-styles)
   - [2. Plain CSS](#2-plain-css)
-  - [3. Sass Scss](#3-sass-scss)
-  - [4. CSS Modules](#4-css-modules)
-  - [5. CSS in JS](#5-css-in-js)
+  - [Sass Scss](#sass-scss)
+  - [CSS Modules](#css-modules)
+  - [CSS in JS](#css-in-js)
 
     - [Key Takeaways](#key-takeaways)
     - [Exercises](#exercises)
@@ -178,6 +178,8 @@ For example, you cannot write animations, styles for nested elements (i.e. all c
 
 If you're prototyping an application, inline styles are great. However, as you get further into making it, you will need to switch to another CSS styling option to give you basic CSS features.
 
+
+
 ## Now lets discuss the pros and cons of inline css
 ## Pros :
 1. Quickest way to write styles
@@ -189,6 +191,17 @@ If you're prototyping an application, inline styles are great. However, as you g
 2. Lots of inline styles make JSX unreadable
 3. You can not use basic CSS features like animations, selectors, etc.
 4. Does not scale well
+
+
+## Now as you have a good idea about inline Css , Let's do a quick exercise : 
+
+## try to make a component which could look similar to this : 
+
+### Feel free to use any external libraries or custom objects 
+
+
+![30 Days of React banner](../images/replicate.jpeg)
+
 
 # 2. Plain CSS
 
@@ -305,7 +318,24 @@ With that being said, there are a number of CSS libraries that give us all the p
 5. Any stylesheet cascades to component and all children; not scoped
 6. Must use a reliable naming convention to ensure styles don't conflict
 
-# 3. Sass Scss
+## Key Takeaways
+
+Note that I did not include component libraries in this comparison. I wanted to focus primarily on different ways to compose styles yourself.
+
+Be aware that choosing a library with pre-made components and styles like Material UI or Ant Design (to name a couple) is a totally valid choice for your project.
+
+I hope this guide gave you a good understanding of how to style your React apps along with which approach to choose for your next project.
+# Exercises
+
+## Try to implement the above mentioned styling methods in your next react project and see which one suits you the best.
+
+
+
+🎉 CONGRATULATIONS ! 🎉
+
+# Here are some of the extra resources which you can go through : 
+
+# Sass Scss
 ![30 Days of React banner](../images/sass.jpg)
 
 What is SASS? SASS is an acronym that stands for: Syntactically Awesome Style Sheets.
@@ -418,7 +448,8 @@ In .testimonial-name , we use a nested selector to target the span element withi
 3. CSS stylesheets is starting to include a number of features that SASS had exclusively, such as CSS variables (not necessarily a con, but worth noting)
 4. SASS / SCSS often requires setup, such as installing the Node library node-sass.
 
-# 4. CSS Modules
+
+# CSS Modules
 CSS Modules is a library that allows us to write CSS stylesheets that are scoped to a single component.
 CSS modules are another slight alternative to something like CSS or SASS.
 
@@ -498,9 +529,7 @@ Therefore, CSS modules are best to use over CSS and SASS to make sure classes do
 1. Can be tricky to reference classnames
 2. May be a learning curve to use CSS styles like object properties
 
-
-
-# 5 CSS in JS
+# CSS in JS
 Similar to how React allowed us to write HTML as JavaScript with JSX, CSS-in-JS has done something similar with CSS.
 
 CSS-in-JS allows us to write CSS styles directly in our components' javascript (.js) files.
@@ -602,17 +631,4 @@ One downside to using a CSS-in-JS libraries is adding an additional library to y
 3. Unlike plain CSS, you will need to install one or more third-party JavaScript libraries, which will add weight to your built project
 
 
-## Key Takeaways
-
-Note that I did not include component libraries in this comparison. I wanted to focus primarily on different ways to compose styles yourself.
-
-Be aware that choosing a library with pre-made components and styles like Material UI or Ant Design (to name a couple) is a totally valid choice for your project.
-
-I hope this guide gave you a good understanding of how to style your React apps along with which approach to choose for your next project.
-# Exercises
-
-## Try to implement the above mentioned styling methods in your next react project and see which one suits you the best.
 [<< Day 2](../Day_2_Resume_builder/Day_2_Resume_builder.md) | [Day 4 >>](../Day_4_props/Day_4_props.md)
-
-
-🎉 CONGRATULATIONS ! 🎉

@@ -19,7 +19,7 @@
 ![30 Days of React banner](../images/react_intro.png)
 
 - [Props](#props)
-  - [Props in Functional Component](#props-in-functional-component)
+  <!-- - [Props in Functional Component](#props-in-functional-component) -->
   - [What is props?](#what-is-props)
   - [Props object](#props-object)
     - [Different data type props](#different-data-type-props)
@@ -35,13 +35,9 @@
 - [Exercises: Components and Props](#exercises-components-and-props)
   - [Exercises: Level 1](#exercises-level-1)
   - [Exercises: Level 2](#exercises-level-2)
-  - [Exercises: Level 3](#exercises-level-3)
+  <!-- - [Exercises: Level 3](#exercises-level-3) -->
 
 # Props
-
-## Props in Functional Component
-
-In the previous day, we saw how to inject different data types to React component JSX. Now, let us see how we use it in component and also how to pass different data as props.
 
 ## What is props?
 
@@ -254,7 +250,11 @@ welcome: "Welcome to 30 Days Of React"
 }
 ```
 
-Since you are a JavaScript ninja by now, you know what do do with this object.
+Since you are a JavaScript ninja by now, you know what to do with this object.
+
+## Now Do you think you can do the same with the objects as well?
+
+## Let's see with an example
 
 As you can see from the above example, the value of the props are written statically. However, if we want to apply some logic it is hard to implement with statically written data, so it will be better to use a variable as props. Let's see the following example:
 
@@ -306,7 +306,11 @@ ReactDOM.render(<App />, rootElement)
 
 ### Number props type
 
-Let's use a number props to a component
+### what comes to your mind about the Number props ? 
+
+I think most of you must have thought in the right direction 
+
+Lets look at them: 
 
 ```js
 import React from 'react'
@@ -339,7 +343,12 @@ ReactDOM.render(<App />, rootElement)
 
 ### Boolean props type
 
-We can pass boolean data types to a React component.
+Same is the case with the boolean props . 
+Try this on you own ..
+
+Tried ..? 
+
+Now lets look 
 
 ```js
 import React from 'react'
@@ -372,7 +381,9 @@ ReactDOM.render(<App />, rootElement)
 
 ### Array props type
 
-In programming arrays and objects are the most frequently used data structure to solve different problems and store data in a more structured way. Therefore, we encounter data in the form of an array quite often. Let's pass an array as props to a component
+In programming arrays and objects are the most frequently used data structure to solve different problems and store data in a more structured way. Therefore, we encounter data in the form of an array quite often. Let's pass an array as props to a component.
+
+As you must have guessed already , here we paas an array in the form of props .
 
 ```js
 import React from 'react'
@@ -416,9 +427,14 @@ ReactDOM.render(<App />, rootElement)
 We will go in-depth about list and map in other sections. Now, let's see an object as a props.
 
 ### Object props type
+This is similar to objects which we created in the inline css documentation .
+
+### You can give it a try before reading further
 
 We may pass an object as props to a React component. Let's see an example.
 We can change the previous Header props to object. For the time being let's change a few properties for better understanding.
+
+
 
 ```js
 import React from 'react'
@@ -1077,12 +1093,28 @@ We will cover propTypes in detail in other sections.
 
 ## Exercises: Level 2
 
-1. Create a functional component and display the following images
-   ![Front end](../images/frontend_technologies.png)
+1. Create a variable named name and pass it to the Message component.
+   
+```js
+  function Person(props) {
+  return <h2>I'm { props.name }!</h2>;
+}
 
-2. Use functional component to create the following design
+function Greeting() {
+  const name = "Jesse"
+  return (
+    <>
+      <h1>Hello!</h1>
+      <Person name=
+ name 
+ />
+    </>
+  );
+}
 
-![News Letter](../images/news_letter_design.png)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Greeting />);
+```
 
 <!-- ## Exercises: Level 3
 
