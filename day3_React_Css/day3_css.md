@@ -200,7 +200,7 @@ If you're prototyping an application, inline styles are great. However, as you g
 ### Feel free to use any external libraries or custom objects 
 
 
-![30 Days of React banner](../images/replicate.jpeg)
+![30 Days of React banner](../images/css_exercise.jpeg)
 
 
 # 2. Plain CSS

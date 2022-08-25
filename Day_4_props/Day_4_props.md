@@ -196,6 +196,7 @@ As you can see in the above code, we passed only single props to Header componen
 
 The data type of the props we pass an attribute to the component is a string.
 
+
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -306,9 +307,12 @@ ReactDOM.render(<App />, rootElement)
 
 ### Number props type
 
-### what comes to your mind about the Number props ? 
+- A Quick Exercise:
 
-I think most of you must have thought in the right direction 
+## Make a component where you would accept a number as a prop and display it in the localhost
+
+
+ I think most of you must have thought in the right direction 
 
 Lets look at them: 
 
@@ -344,9 +348,10 @@ ReactDOM.render(<App />, rootElement)
 ### Boolean props type
 
 Same is the case with the boolean props . 
-Try this on you own ..
 
-Tried ..? 
+## Make a component where you would accept a boolean value as a prop and display it in the localhost
+
+Tried ? 
 
 Now lets look 
 
@@ -380,6 +385,8 @@ ReactDOM.render(<App />, rootElement)
 ```
 
 ### Array props type
+
+- ## Similarly You want to create an array of props and pass it into your function 
 
 In programming arrays and objects are the most frequently used data structure to solve different problems and store data in a more structured way. Therefore, we encounter data in the form of an array quite often. Let's pass an array as props to a component.
 
@@ -544,6 +551,9 @@ ReactDOM.render(<App />, rootElement)
 When we use an object as props we usually destructure the data to access the values. Destructuring makes our code easy to read. We will soon see the destructuring of props but before that let's see function as props for a React component.
 
 ### Function prop types
+
+## Exercise : 
+- Create a component that accepts a function prop type into some other function 
 
 We can pass a function as props type to a React component. Let's see some examples
 
