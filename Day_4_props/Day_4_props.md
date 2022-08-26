@@ -9,6 +9,7 @@
 
 <!-- <sub>Author: -->
 <!-- <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br> -->
+
 <small> August, 2022</small>
 </sub>
 
@@ -77,19 +78,19 @@ const User = (props) => {
 In the previous section, we injected data as follows and today we will change these data to props.
 
 ```js
-const welcome = 'Welcome to 30 Days Of React'
-const title = 'Getting Started React'
-const subtitle = 'JavaScript Library'
+const welcome = "Welcome to 30 Days Of React";
+const title = "Getting Started React";
+const subtitle = "JavaScript Library";
 const author = {
-  firstName: 'John',
-  lastName: 'Anthony',
-}
-const date = 'August, 2022'
+  firstName: "John",
+  lastName: "Anthony",
+};
+const date = "August, 2022";
 
 // Header Component
 const Header = () => (
   <header>
-    <div className='header-wrapper'>
+    <div className="header-wrapper">
       <h1>{welcome}</h1>
       <h2>{title}</h2>
       <h3>{subtitle}</h3>
@@ -99,7 +100,7 @@ const Header = () => (
       <small>{date}</small>
     </div>
   </header>
-)
+);
 ```
 
 Instead of injecting data we can also pass the data as props. React props are similar to parameters in functions.
@@ -109,15 +110,15 @@ Instead of injecting data we can also pass the data as props. React props are si
 React props is an object which you get instantly when you create a React component. Before we pass properties to the component, let's check what do we get in the props object.
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 // Header Component
 const Header = (props) => {
-  console.log(props) // empty object, {}
+  console.log(props); // empty object, {}
   return (
     <header>
-      <div className='header-wrapper'>
+      <div className="header-wrapper">
         <h1>{welcome}</h1>
         <h2>{title}</h2>
         <h3>{subtitle}</h3>
@@ -127,22 +128,22 @@ const Header = (props) => {
         <small>{date}</small>
       </div>
     </header>
-  )
-}
+  );
+};
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
   return (
-    <div className='app'>
+    <div className="app">
       <Header />
     </div>
-  )
-}
+  );
+};
 
-const rootElement = document.getElementById('root')
+const rootElement = document.getElementById("root");
 
-ReactDOM.render(<App />, rootElement)
+ReactDOM.render(<App />, rootElement);
 ```
 
 In the above console.log(props), you would get an empty object({}). That means if you do not pass any attributes or properties when you instantiate the component, the props will be empty otherwise it will be populated with the data you passed as attributes and the proper name of these attributes are props.
@@ -150,41 +151,41 @@ In the above console.log(props), you would get an empty object({}). That means i
 Let's start with a simple example. In the example below, the welcome string has been passed as props in the Header components.
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 // Header Component
 const Header = (props) => {
-  console.log(props) // {welcome:'Welcome to 30 Days Of React'}
+  console.log(props); // {welcome:'Welcome to 30 Days Of React'}
   return (
     <header>
-      <div className='header-wrapper'>
+      <div className="header-wrapper">
         <h1>{props.welcome}</h1>
       </div>
     </header>
-  )
-}
+  );
+};
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
   return (
-    <div className='app'>
-      <Header welcome='Welcome to 30 Days Of React' />
+    <div className="app">
+      <Header welcome="Welcome to 30 Days Of React" />
     </div>
-  )
-}
+  );
+};
 
-const rootElement = document.getElementById('root')
+const rootElement = document.getElementById("root");
 
-ReactDOM.render(<App />, rootElement)
+ReactDOM.render(<App />, rootElement);
 ```
 
 Now, when you do console.log(props) you should get the following object, that means the welcome property we passed to the Header component can be found inside the props object.
 
 ```js
 {
-  welcome: 'Welcome to 30 Days Of React'
+  welcome: "Welcome to 30 Days Of React";
 }
 ```
 
@@ -196,17 +197,16 @@ As you can see in the above code, we passed only single props to Header componen
 
 The data type of the props we pass an attribute to the component is a string.
 
-
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 // Header Component
 const Header = (props) => {
-  console.log(props)
+  console.log(props);
   return (
     <header>
-      <div className='header-wrapper'>
+      <div className="header-wrapper">
         <h1>{props.welcome}</h1>
         <h2>{props.title}</h2>
         <h3>{props.subtitle}</h3>
@@ -216,26 +216,26 @@ const Header = (props) => {
         <small>{props.date}</small>
       </div>
     </header>
-  )
-}
+  );
+};
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => (
-  <div className='app'>
+  <div className="app">
     <Header
-      welcome='Welcome to 30 Days Of React'
-      title='Getting Started React'
-      subtitle='JavaScript Library'
-      firstName='John'
-      lastName='Anthony'
-      date='August, 2022'
+      welcome="Welcome to 30 Days Of React"
+      title="Getting Started React"
+      subtitle="JavaScript Library"
+      firstName="John"
+      lastName="Anthony"
+      date="August, 2022"
     />
   </div>
-)
+);
 
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 If you check on the browser console, you will get the following object.
@@ -260,13 +260,13 @@ Since you are a JavaScript ninja by now, you know what to do with this object.
 As you can see from the above example, the value of the props are written statically. However, if we want to apply some logic it is hard to implement with statically written data, so it will be better to use a variable as props. Let's see the following example:
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 // Header Component
 const Header = (props) => (
   <header>
-    <div className='header-wrapper'>
+    <div className="header-wrapper">
       <h1>{props.welcome}</h1>
       <h2>{props.title}</h2>
       <h3>{props.subtitle}</h3>
@@ -276,20 +276,20 @@ const Header = (props) => (
       <small>{props.date}</small>
     </div>
   </header>
-)
+);
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
-  const welcome = 'Welcome to 30 Days Of React'
-  const title = 'Getting Started React'
-  const subtitle = 'JavaScript Library'
-  const firstName = 'John'
-  const lastName = 'Anthony'
-  const date = 'August, 2022'
+  const welcome = "Welcome to 30 Days Of React";
+  const title = "Getting Started React";
+  const subtitle = "JavaScript Library";
+  const firstName = "John";
+  const lastName = "Anthony";
+  const date = "August, 2022";
 
   return (
-    <div className='app'>
+    <div className="app">
       <Header
         welcome={welcome}
         title={title}
@@ -299,10 +299,10 @@ const App = () => {
         date={date}
       />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 ### Number props type
@@ -311,129 +311,129 @@ ReactDOM.render(<App />, rootElement)
 
 ## Make a component where you would accept a number as a prop and display it in the localhost
 
+I think most of you must have thought in the right direction
 
- I think most of you must have thought in the right direction 
-
-Lets look at them: 
+Lets look at them:
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
-const Age = (props) => <div>The person is {props.age} years old.</div>
+const Age = (props) => <div>The person is {props.age} years old.</div>;
 const Weight = (props) => (
   <p>The weight of the object on earth is {props.weight} N.</p>
-)
+);
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
-  let currentYear = 2020
-  let birthYear = 1820
-  const age = currentYear - birthYear
-  const gravity = 9.81
-  const mass = 75
+  let currentYear = 2020;
+  let birthYear = 1820;
+  const age = currentYear - birthYear;
+  const gravity = 9.81;
+  const mass = 75;
 
   return (
-    <div className='app'>
+    <div className="app">
       <Age age={age} />
       <Weight weight={gravity * mass} />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 ### Boolean props type
 
-Same is the case with the boolean props . 
+Same is the case with the boolean props .
 
 ## Make a component where you would accept a boolean value as a prop and display it in the localhost
 
-Tried ? 
+Tried ?
 
-Now lets look 
+Now lets look
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 const Status = (props) => {
   // ternary operator to check the status of the person
-  let status = props.status ? 'Old enough to drive' : 'Too young for driving'
-  return <p>{status}</p>
-}
+  let status = props.status ? "Old enough to drive" : "Too young for driving";
+  return <p>{status}</p>;
+};
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
-  let currentYear = 2020
-  let birthYear = 2015
-  const age = currentYear - birthYear // 15 years
+  let currentYear = 2020;
+  let birthYear = 2015;
+  const age = currentYear - birthYear; // 15 years
 
-  let status = age >= 18
+  let status = age >= 18;
 
   return (
-    <div className='app'>
+    <div className="app">
       <Status status={status} />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 ### Array props type
 
-- ## Similarly You want to create an array of props and pass it into your function 
+- ## Similarly You want to create an array of props and pass it into your function
 
 In programming arrays and objects are the most frequently used data structure to solve different problems and store data in a more structured way. Therefore, we encounter data in the form of an array quite often. Let's pass an array as props to a component.
 
 As you must have guessed already , here we paas an array in the form of props .
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
-const Skills = (props) => <ul>{props.skills}</ul>
+const Skills = (props) => <ul>{props.skills}</ul>;
 
 const App = () => (
-  <div className='app'>
-    <Skills skills={['HTML', 'CSS', 'JavaScript']} />
+  <div className="app">
+    <Skills skills={["HTML", "CSS", "JavaScript"]} />
   </div>
-)
+);
 
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 If you see the result on the browser, the skills elements needs formatting. Therefore before we render, it should have some elements between each skill. To modify the array and to add a li element we can use map method. You should be very familiar with the functional programming map, filter and reduce to feel good at React if not please go back to day 1 JavaScript refresher. Let's apply map to modify the array.
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 // Skills Component
 const Skills = (props) => {
   // modifying the skills array
-  const skillList = props.skills.map((skill) => <li>{skill}</li>)
-  return <ul>{skillList}</ul>
-}
+  const skillList = props.skills.map((skill) => <li>{skill}</li>);
+  return <ul>{skillList}</ul>;
+};
 
 const App = () => (
-  <div className='app'>
-    <Skills skills={['HTML', 'CSS', 'JavaScript']} />
+  <div className="app">
+    <Skills skills={["HTML", "CSS", "JavaScript"]} />
   </div>
-)
+);
 
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 We will go in-depth about list and map in other sections. Now, let's see an object as a props.
 
 ### Object props type
+
 This is similar to objects which we created in the inline css documentation .
 
 ### You can give it a try before reading further
@@ -441,77 +441,75 @@ This is similar to objects which we created in the inline css documentation .
 We may pass an object as props to a React component. Let's see an example.
 We can change the previous Header props to object. For the time being let's change a few properties for better understanding.
 
-
-
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 // Header Component
 const Header = (props) => {
   return (
     <header>
-      <div className='header-wrapper'>
+      <div className="header-wrapper">
         <h1>{props.data.welcome}</h1>
         <h2>{props.data.title}</h2>
         <h3>{props.data.subtitle}</h3>
       </div>
     </header>
-  )
-}
+  );
+};
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
   const data = {
-    welcome: 'Welcome to 30 Days Of React',
-    title: 'Getting Started React',
-    subtitle: 'JavaScript Library',
-  }
+    welcome: "Welcome to 30 Days Of React",
+    title: "Getting Started React",
+    subtitle: "JavaScript Library",
+  };
 
   return (
-    <div className='app'>
+    <div className="app">
       <Header data={data} />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
+  );
+};
+const rootElement = document.getElementById("root");
 // we render the JSX element using the ReactDOM package
-ReactDOM.render(<App />, rootElement)
+ReactDOM.render(<App />, rootElement);
 ```
 
 Now, let's change all the previous Header properties to an object.
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 const showDate = (time) => {
   const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ]
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
-  const month = months[time.getMonth()].slice(0, 3)
-  const year = time.getFullYear()
-  const date = time.getDate()
-  return ` ${month} ${date}, ${year}`
-}
+  const month = months[time.getMonth()].slice(0, 3);
+  const year = time.getFullYear();
+  const date = time.getDate();
+  return ` ${month} ${date}, ${year}`;
+};
 // Header Component
 const Header = (props) => {
   return (
     <header>
-      <div className='header-wrapper'>
+      <div className="header-wrapper">
         <h1>{props.data.welcome}</h1>
         <h2>{props.data.title}</h2>
         <h3>{props.data.subtitle}</h3>
@@ -521,118 +519,119 @@ const Header = (props) => {
         <small>{showDate(props.data.date)}</small>
       </div>
     </header>
-  )
-}
+  );
+};
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
   const data = {
-    welcome: 'Welcome to 30 Days Of React',
-    title: 'Getting Started React',
-    subtitle: 'JavaScript Library',
+    welcome: "Welcome to 30 Days Of React",
+    title: "Getting Started React",
+    subtitle: "JavaScript Library",
     author: {
-      firstName: 'John',
-      lastName: 'Anthony',
+      firstName: "John",
+      lastName: "Anthony",
     },
     date: new Date(), // date needs to be formatted to a human readable format
-  }
+  };
 
   return (
-    <div className='app'>
+    <div className="app">
       <Header data={data} />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 When we use an object as props we usually destructure the data to access the values. Destructuring makes our code easy to read. We will soon see the destructuring of props but before that let's see function as props for a React component.
 
 ### Function prop types
 
-## Exercise : 
-- Create a component that accepts a function prop type into some other function 
+## Exercise :
+
+- Create a component that accepts a function prop type into some other function
 
 We can pass a function as props type to a React component. Let's see some examples
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 // A button component
 
-const Button = (props) => <button onClick={props.onClick}>{props.text}</button>
+const Button = (props) => <button onClick={props.onClick}>{props.text}</button>;
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
   const sayHi = () => {
-    alert('Hi')
-  }
+    alert("Hi");
+  };
 
   return (
-    <div className='app'>
-      <Button text='Say Hi' onClick={sayHi} />
+    <div className="app">
+      <Button text="Say Hi" onClick={sayHi} />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
+  );
+};
+const rootElement = document.getElementById("root");
 // we render the JSX element using the ReactDOM package
-ReactDOM.render(<App />, rootElement)
+ReactDOM.render(<App />, rootElement);
 ```
 
 Even we can write a function inside the curly bracket
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 // A button component
 
-const Button = (props) => <button onClick={props.onClick}>{props.text}</button>
+const Button = (props) => <button onClick={props.onClick}>{props.text}</button>;
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
   return (
-    <div className='app'>
-      <Button text='Say Hi' onClick={() => alert('Hi')} />
+    <div className="app">
+      <Button text="Say Hi" onClick={() => alert("Hi")} />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
+  );
+};
+const rootElement = document.getElementById("root");
 // we render the JSX element using the ReactDOM package
-ReactDOM.render(<App />, rootElement)
+ReactDOM.render(<App />, rootElement);
 ```
 
 Now, lets implement different functions as props
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 // A button component
 
-const Button = (props) => <button onClick={props.onClick}>{props.text}</button>
+const Button = (props) => <button onClick={props.onClick}>{props.text}</button>;
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
   const greetPeople = () => {
-    alert('Welcome to 30 Days Of React Challenge, 2020')
-  }
+    alert("Welcome to 30 Days Of React Challenge, 2020");
+  };
 
   return (
-    <div className='app'>
-      <Button text='Greet People' onClick={greetPeople} />
-      <Button text='Show Time' onClick={() => alert(new Date())} />
+    <div className="app">
+      <Button text="Greet People" onClick={greetPeople} />
+      <Button text="Show Time" onClick={() => alert(new Date())} />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 In the above example, onClick is a props to hold the greetPeople function. HTML has onclick, onmouseover, onhover, onkeypress and etc event handlers. In React, these handlers are in camelCase. For instance onClick, onMouseOver, onKeyPress etc. We will cover events in React in detail in other section.
@@ -642,54 +641,54 @@ Let's see some more functions as props to give a clear understanding how to hand
 This component shows month, date and year as an alert box.
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 // Function to display time in Mon date, year format eg Oct 4, 2020
 const showDate = (time) => {
   const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ]
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
-  const month = months[time.getMonth()].slice(0, 3)
-  const year = time.getFullYear()
-  const date = time.getDate()
-  return ` ${month} ${date}, ${year}`
-}
+  const month = months[time.getMonth()].slice(0, 3);
+  const year = time.getFullYear();
+  const date = time.getDate();
+  return ` ${month} ${date}, ${year}`;
+};
 
 // A button component
 
-const Button = (props) => <button onClick={props.onClick}>{props.text}</button>
+const Button = (props) => <button onClick={props.onClick}>{props.text}</button>;
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
   const handleTime = () => {
-    alert(showDate(new Date()))
-  }
+    alert(showDate(new Date()));
+  };
   const greetPeople = () => {
-    alert('Welcome to 30 Days Of React Challenge, 2020')
-  }
+    alert("Welcome to 30 Days Of React Challenge, 2020");
+  };
   return (
-    <div className='app'>
-      <Button text='show time' onClick={handleTime} />
-      <Button text='Greet People' onClick={greetPeople} />
+    <div className="app">
+      <Button text="show time" onClick={handleTime} />
+      <Button text="Greet People" onClick={greetPeople} />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 ## Destructuring props
@@ -699,38 +698,38 @@ By now, I believe you are a JavaScript ninja and you know about destructing arra
 1. Step by step destructuring
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 const showDate = (time) => {
   const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ]
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
-  const month = months[time.getMonth()].slice(0, 3)
-  const year = time.getFullYear()
-  const date = time.getDate()
-  return ` ${month} ${date}, ${year}`
-}
+  const month = months[time.getMonth()].slice(0, 3);
+  const year = time.getFullYear();
+  const date = time.getDate();
+  return ` ${month} ${date}, ${year}`;
+};
 // Header Component
 const Header = (props) => {
-  const data = props.data
-  const { welcome, title, subtitle, author, date } = data
-  const { firstName, lastName } = author
+  const data = props.data;
+  const { welcome, title, subtitle, author, date } = data;
+  const { firstName, lastName } = author;
   return (
     <header>
-      <div className='header-wrapper'>
+      <div className="header-wrapper">
         <h1>{welcome}</h1>
         <h2>{title}</h2>
         <h3>{subtitle}</h3>
@@ -740,75 +739,75 @@ const Header = (props) => {
         <small>{showDate(date)}</small>
       </div>
     </header>
-  )
-}
+  );
+};
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
   const data = {
-    welcome: 'Welcome to 30 Days Of React',
-    title: 'Getting Started React',
-    subtitle: 'JavaScript Library',
+    welcome: "Welcome to 30 Days Of React",
+    title: "Getting Started React",
+    subtitle: "JavaScript Library",
     author: {
-      firstName: 'John',
-      lastName: 'Anthony',
+      firstName: "John",
+      lastName: "Anthony",
     },
     date: new Date(),
-  }
+  };
 
   return (
-    <div className='app'>
+    <div className="app">
       <Header data={data} />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
+  );
+};
+const rootElement = document.getElementById("root");
 // we render the JSX element using the ReactDOM package
-ReactDOM.render(<App />, rootElement)
+ReactDOM.render(<App />, rootElement);
 ```
 
 2. Destructuring in one line
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 const showDate = (time) => {
   const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ]
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
-  const month = months[time.getMonth()].slice(0, 3)
-  const year = time.getFullYear()
-  const date = time.getDate()
-  return ` ${month} ${date}, ${year}`
-}
+  const month = months[time.getMonth()].slice(0, 3);
+  const year = time.getFullYear();
+  const date = time.getDate();
+  return ` ${month} ${date}, ${year}`;
+};
 // Header Component
 const Header = (props) => {
-  const data = props.data
+  const data = props.data;
   const {
     welcome,
     title,
     subtitle,
     author: { firstName, lastName },
     date,
-  } = data
+  } = data;
 
   return (
     <header>
-      <div className='header-wrapper'>
+      <div className="header-wrapper">
         <h1>{welcome}</h1>
         <h2>{title}</h2>
         <h3>{subtitle}</h3>
@@ -818,60 +817,60 @@ const Header = (props) => {
         <small>{showDate(date)}</small>
       </div>
     </header>
-  )
-}
+  );
+};
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
   const data = {
-    welcome: 'Welcome to 30 Days Of React',
-    title: 'Getting Started React',
-    subtitle: 'JavaScript Library',
+    welcome: "Welcome to 30 Days Of React",
+    title: "Getting Started React",
+    subtitle: "JavaScript Library",
     author: {
-      firstName: 'John',
-      lastName: 'Anthony',
+      firstName: "John",
+      lastName: "Anthony",
     },
     date: new Date(),
-  }
+  };
 
   return (
-    <div className='app'>
+    <div className="app">
       <Header data={data} />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 3. Destructuring the props inside the parenthesis
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 const showDate = (time) => {
   const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ]
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
-  const month = months[time.getMonth()].slice(0, 3)
-  const year = time.getFullYear()
-  const date = time.getDate()
-  return ` ${month} ${date}, ${year}`
-}
+  const month = months[time.getMonth()].slice(0, 3);
+  const year = time.getFullYear();
+  const date = time.getDate();
+  return ` ${month} ${date}, ${year}`;
+};
 // Header Component
 const Header = ({
   data: {
@@ -884,7 +883,7 @@ const Header = ({
 }) => {
   return (
     <header>
-      <div className='header-wrapper'>
+      <div className="header-wrapper">
         <h1>{welcome}</h1>
         <h2>{title}</h2>
         <h3>{subtitle}</h3>
@@ -894,64 +893,64 @@ const Header = ({
         <small>{showDate(date)}</small>
       </div>
     </header>
-  )
-}
+  );
+};
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
   const data = {
-    welcome: 'Welcome to 30 Days Of React',
-    title: 'Getting Started React',
-    subtitle: 'JavaScript Library',
+    welcome: "Welcome to 30 Days Of React",
+    title: "Getting Started React",
+    subtitle: "JavaScript Library",
     author: {
-      firstName: 'John',
-      lastName: 'Anthony',
+      firstName: "John",
+      lastName: "Anthony",
     },
     date: new Date(),
-  }
+  };
 
   return (
-    <div className='app'>
+    <div className="app">
       <Header data={data} />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 Now, let's destructure all the components we had and assemble them together. We pass props from one component to another typically from parent to a child component.
 For instance in the Main component techs, user, greetPeople and handleTime props have been passed from the parent component Main to child components TechList and UserCard. Below, you will get all the codes destructured and cleaned.
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
-import asabenehImage from './images/asabeneh.jpg'
+import React from "react";
+import ReactDOM from "react-dom";
+import asabenehImage from "./images/asabeneh.jpg";
 
 // Fuction to show month date year
 
 const showDate = (time) => {
   const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ]
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
-  const month = months[time.getMonth()].slice(0, 3)
-  const year = time.getFullYear()
-  const date = time.getDate()
-  return ` ${month} ${date}, ${year}`
-}
+  const month = months[time.getMonth()].slice(0, 3);
+  const year = time.getFullYear();
+  const date = time.getDate();
+  return ` ${month} ${date}, ${year}`;
+};
 
 // Header Component
 const Header = ({
@@ -965,7 +964,7 @@ const Header = ({
 }) => {
   return (
     <header>
-      <div className='header-wrapper'>
+      <div className="header-wrapper">
         <h1>{welcome}</h1>
         <h2>{title}</h2>
         <h3>{subtitle}</h3>
@@ -975,25 +974,25 @@ const Header = ({
         <small>{showDate(date)}</small>
       </div>
     </header>
-  )
-}
+  );
+};
 
 // TechList Component
 const TechList = ({ techs }) => {
-  const techList = techs.map((tech) => <li key={tech}>{tech}</li>)
-  return techList
-}
+  const techList = techs.map((tech) => <li key={tech}>{tech}</li>);
+  return techList;
+};
 
 // User Card Component
 const UserCard = ({ user: { firstName, lastName, image } }) => (
-  <div className='user-card'>
+  <div className="user-card">
     <img src={image} alt={firstName} />
     <h2>
       {firstName}
       {lastName}
     </h2>
   </div>
-)
+);
 
 // A button component
 
@@ -1001,71 +1000,71 @@ const Button = ({ text, onClick, style }) => (
   <button style={style} onClick={onClick}>
     {text}
   </button>
-)
+);
 
 // CSS styles in JavaScript Object
 const buttonStyles = {
-  backgroundColor: '#61dbfb',
+  backgroundColor: "#61dbfb",
   padding: 10,
-  border: 'none',
+  border: "none",
   borderRadius: 5,
   margin: 3,
-  cursor: 'pointer',
+  cursor: "pointer",
   fontSize: 18,
-  color: 'white',
-}
+  color: "white",
+};
 
 // Main Component
 const Main = ({ user, techs, greetPeople, handleTime }) => (
   <main>
-    <div className='main-wrapper'>
+    <div className="main-wrapper">
       <p>Prerequisite to get started react.js:</p>
       <ul>
         <TechList techs={techs} />
       </ul>
       <UserCard user={user} />
-      <Button text='Greet People' onClick={greetPeople} style={buttonStyles} />
-      <Button text='Show Time' onClick={handleTime} style={buttonStyles} />
+      <Button text="Greet People" onClick={greetPeople} style={buttonStyles} />
+      <Button text="Show Time" onClick={handleTime} style={buttonStyles} />
     </div>
   </main>
-)
+);
 
 // Footer Component
 const Footer = ({ copyRight }) => (
   <footer>
-    <div className='footer-wrapper'>
+    <div className="footer-wrapper">
       <p>Copyright {copyRight.getFullYear()}</p>
     </div>
   </footer>
-)
+);
 
 // The App, or the parent or the container component
 // Functional Component
 const App = () => {
   const data = {
-    welcome: 'Welcome to 30 Days Of React',
-    title: 'Getting Started React',
-    subtitle: 'JavaScript Library',
+    welcome: "Welcome to 30 Days Of React",
+    title: "Getting Started React",
+    subtitle: "JavaScript Library",
     author: {
-      firstName: 'John',
-      lastName: 'Anthony',
+      firstName: "John",
+      lastName: "Anthony",
     },
     date: new Date(), // date needs to be formatted to a human readable format
-  }
-  const date = new Date()
-  const techs = ['HTML', 'CSS', 'JavaScript']
+  };
+  const date = new Date();
+  const techs = ["HTML", "CSS", "JavaScript"];
   // copying the author from data object to user variable using spread operator
-  const user = { ...data.author, image: asabenehImage }
+  const user = { ...data.author, image: asabenehImage };
 
   const handleTime = () => {
-    alert(showDate(new Date()))
-  }
+    alert(showDate(new Date()));
+  };
   const greetPeople = () => {
-    alert('Welcome to 30 Days Of React Challenge, 2020')
-  }
+    alert("Welcome to 30 Days Of React Challenge, 2020");
+  };
 
   return (
-    <div className='app'>
+    <div className="app">
       <Header data={data} />
       <Main
         user={user}
@@ -1075,10 +1074,10 @@ const App = () => {
       />
       <Footer copyRight={date} />
     </div>
-  )
-}
-const rootElement = document.getElementById('root')
-ReactDOM.render(<App />, rootElement)
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 ## propTypes
@@ -1104,7 +1103,7 @@ We will cover propTypes in detail in other sections.
 ## Exercises: Level 2
 
 1. Create a variable named name and pass it to the Message component.
-   
+
 ```js
   function Person(props) {
   return <h2>I'm { props.name }!</h2>;
@@ -1116,7 +1115,7 @@ function Greeting() {
     <>
       <h1>Hello!</h1>
       <Person name=
- name 
+ name
  />
     </>
   );
@@ -1138,4 +1137,4 @@ root.render(<Greeting />);
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 3](../day3_React_css/day3_css.md) | [Day 5 >>](../06_Day_Map_List_Keys/06_map_list_keys.md)
+[<< Day 3](../day_3_React_css/day3_css.md) | [Day 5 >>](../Day_5_MiniProject\Day_5_MiniProject.md)

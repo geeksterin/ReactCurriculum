@@ -10,7 +10,9 @@
 </div>
 
 ![30 Days of React banner](../images/react_intro.png)
+
 - [Different ways to style your react app](#different-ways-to-style-your-react-app)
+
   - [1. Inline Styles](#1-inline-styles)
   - [2. Plain CSS](#2-plain-css)
   - [Sass Scss](#sass-scss)
@@ -31,8 +33,8 @@ Let's get started!
 
 ![30 Days of React banner](../images/css_react.jpg)
 
-
 # 1. Inline Styles
+
 Inline styles are the most direct away to style any React application.
 
 Styling elements inline doesn't require you to create a separate stylesheet.
@@ -103,105 +105,73 @@ export default function App() {
   );
 }
 ```
+
 Despite a few quick benefits, inline styles are only an acceptable choice for very small applications. The difficulties with inline styles become apparent as your code base grows even slightly.
 
 As the code example above shows, even a small component like this becomes very bulky if all the styles are inline.
 
 One quick trick however is to put inline styles into reusable variables, which can be stored in a separate file:
-```html
-const styles = {
-  section: {
-    fontFamily: "-apple-system",
-    fontSize: "1rem",
-    fontWeight: 1.5,
-    lineHeight: 1.5,
-    color: "#292b2c",
-    backgroundColor: "#fff",
-    padding: "0 2em"
-  },
-  wrapper: {
-    textAlign: "center",
-    maxWidth: "950px",
-    margin: "0 auto",
-    border: "1px solid #e6e6e6",
-    padding: "40px 25px",
-    marginTop: "50px"
-  },
-  avatar: {
-    margin: "-90px auto 30px",
-    width: "100px",
-    borderRadius: "50%",
-    objectFit: "cover",
-    marginBottom: "0"
-  },
-  quote: {
-    lineHeight: 1.5,
-    fontWeight: 300,
-    marginBottom: "25px",
-    fontSize: "1.375rem"
-  },
-  name: {
-    marginBottom: "0",
-    fontWeight: 600,
-    fontSize: "1rem"
-  },
-  position: { fontWeight: 400 }
-};
 
-export default function App() {
-  return (
-    <section style={styles.section}>
-      <div style={styles.wrapper}>
-        <img
-          src="https://randomuser.me/api/portraits/women/48.jpg"
-          alt="Tammy Stevens"
-          style={styles.avatar}
-        />
-        <div>
-          <p style={styles.quote}>
-            This is one of the best developer blogs on the planet! I read it
-            daily to improve my skills.
-          </p>
-        </div>
-        <p style={styles.name}>
-          Tammy Stevens
-          <span style={styles.position}> · Front End Developer</span>
-        </p>
-      </div>
-    </section>
-  );
-}
+```html
+const styles = { section: { fontFamily: "-apple-system", fontSize: "1rem",
+fontWeight: 1.5, lineHeight: 1.5, color: "#292b2c", backgroundColor: "#fff",
+padding: "0 2em" }, wrapper: { textAlign: "center", maxWidth: "950px", margin:
+"0 auto", border: "1px solid #e6e6e6", padding: "40px 25px", marginTop: "50px"
+}, avatar: { margin: "-90px auto 30px", width: "100px", borderRadius: "50%",
+objectFit: "cover", marginBottom: "0" }, quote: { lineHeight: 1.5, fontWeight:
+300, marginBottom: "25px", fontSize: "1.375rem" }, name: { marginBottom: "0",
+fontWeight: 600, fontSize: "1rem" }, position: { fontWeight: 400 } }; export
+default function App() { return (
+<section style="{styles.section}">
+  <div style="{styles.wrapper}">
+    <img
+      src="https://randomuser.me/api/portraits/women/48.jpg"
+      alt="Tammy Stevens"
+      style="{styles.avatar}"
+    />
+    <div>
+      <p style="{styles.quote}">
+        This is one of the best developer blogs on the planet! I read it daily
+        to improve my skills.
+      </p>
+    </div>
+    <p style="{styles.name}">
+      Tammy Stevens
+      <span style="{styles.position}"> · Front End Developer</span>
+    </p>
+  </div>
+</section>
+); }
 ```
+
 Despite this improvement, inline styles do not have a number of essential features that any simple CSS stylesheet could provide.
 
 For example, you cannot write animations, styles for nested elements (i.e. all child elements, first-child, last-child), pseudo-classes (i.e. :hover), and pseudo-elements (::first-line) to name a few.
 
 If you're prototyping an application, inline styles are great. However, as you get further into making it, you will need to switch to another CSS styling option to give you basic CSS features.
 
-
-
 ## Now lets discuss the pros and cons of inline css
+
 ## Pros :
+
 1. Quickest way to write styles
 2. Good for prototyping (write inline styles then move to stylesheet)
 3. Has great preference (can override styles from a stylesheet)
 
 ## Cons :
+
 1. Tedious to convert plain CSS to inline styles
 2. Lots of inline styles make JSX unreadable
 3. You can not use basic CSS features like animations, selectors, etc.
 4. Does not scale well
 
+## Now as you have a good idea about inline Css , Let's do a quick exercise :
 
-## Now as you have a good idea about inline Css , Let's do a quick exercise : 
+## try to make a component which could look similar to this :
 
-## try to make a component which could look similar to this : 
-
-### Feel free to use any external libraries or custom objects 
-
+### Feel free to use any external libraries or custom objects
 
 ![30 Days of React banner](../images/css_exercise.jpeg)
-
 
 # 2. Plain CSS
 
@@ -214,11 +184,13 @@ Writing styles in "plain" CSS stylesheets is getting better all the time, due to
 This includes features like CSS variables to store dynamic values, all manner of advanced selectors to select child elements with precision, and new pseudo-classes like :is and :where.
 
 Here is our testimonial card written in plain CSS and imported at the top of our React application:
+
 ```css
 /* src/styles.css */
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   font-size: 1rem;
   font-weight: 1.5;
@@ -260,6 +232,7 @@ body {
   font-weight: 400;
 }
 ```
+
 ```jsx
 // src/App.js
 
@@ -276,7 +249,8 @@ export default function App() {
         />
         <div className="testimonial-quote">
           <p>
-            This is one of the best developer blogs on the planet! I read it daily to improve my skills.
+            This is one of the best developer blogs on the planet! I read it
+            daily to improve my skills.
           </p>
         </div>
         <p className="testimonial-name">
@@ -286,7 +260,8 @@ export default function App() {
     </section>
   );
 }
-```  
+```
+
 For our testimonial card, note that we are creating classes to be applied to each individual element. These classes all start with the same name testimonial-.
 
 CSS written in a stylesheet is a great first choice for your application. Unlike inline styles, it can style your application in virtually any way you need.
@@ -304,13 +279,16 @@ If you are confident with CSS, it is definitely a viable choice for you to style
 With that being said, there are a number of CSS libraries that give us all the power of CSS with less code and include many additional features that CSS will never have on its own (such as scoped styles and automatic vendor prefixing).
 
 ## Now lets discuss the pros and cons of plain css
+
 ## Pros :
+
 1. Easy to write
 2. Easy to understand
 3. Gives us all of the tools of modern CSS (variables, advanced selectors, new pseudo-classes, etc.)
 4. Helps us clean up our component files from inline styles
 
 ## Cons :
+
 1. Can be verbose and repetitive
 2. Can be hard to think of unique classnames
 3. Need to setup vendor prefixing to ensure latest features work for all users
@@ -325,29 +303,29 @@ Note that I did not include component libraries in this comparison. I wanted to 
 Be aware that choosing a library with pre-made components and styles like Material UI or Ant Design (to name a couple) is a totally valid choice for your project.
 
 I hope this guide gave you a good understanding of how to style your React apps along with which approach to choose for your next project.
+
 # Exercises
 
 ## Try to implement the above mentioned styling methods in your next react project and see which one suits you the best.
 
-
-
 🎉 CONGRATULATIONS ! 🎉
 
-# Here are some of the extra resources which you can go through : 
+# Here are some of the extra resources which you can go through :
 
 # Sass Scss
+
 ![30 Days of React banner](../images/sass.jpg)
 
 What is SASS? SASS is an acronym that stands for: Syntactically Awesome Style Sheets.
 
 SASS gives us some powerful tools, many of which don't exist in normal CSS stylesheets. It includes features like variables, extending styles, and nesting.
 
-
 SASS allows us to write styles in two different kinds of stylesheets, with the extensions .scss and .sass.
 
 SCSS styles are written in a similar syntax to normal CSS, however SASS styles do not require us to use open and closing brackets when writing style rules.
 
 Here is a quick example of an SCSS stylesheet with some nested styles:
+
 ```css
 /* styles.scss */
 
@@ -358,7 +336,9 @@ nav {
     list-style: none;
   }
 
-  li { display: inline-block; }
+  li {
+    display: inline-block;
+  }
 
   a {
     display: block;
@@ -367,7 +347,9 @@ nav {
   }
 }
 ```
+
 Compare this with the same code written in a SASS stylesheet:
+
 ```css
 /* styles.sass */
 
@@ -385,16 +367,20 @@ nav
     padding: 6px 12px
     text-decoration: none
 ```
+
 Since this is not regular CSS, it needs to be compiled from SASS into plain CSS. To do so in our React projects, you can use a library like node-sass.
 
 If you are using a Create React App project, to start using .scss and .sass files, you can install node-sass with npm:
 
 ## npm install node-sass
+
 Here is our testimonial card styled with SCSS:
+
 ```css
 /* src/styles.scss */
 
-$font-stack: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-stack: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif;
 $text-color: #292b2c;
 
 %font-basic {
@@ -424,6 +410,7 @@ body {
   }
 }
 ```
+
 These styles give us the following features: variables, extending styles and nested styles.
 
 Variables: You can use dynamic values by writing variables, just like in JavaScript, by declaring them with a $ at the beginning.
@@ -439,28 +426,34 @@ Nesting: Instead of writing multiple rules that begin with the same selector, yo
 In .testimonial-name , we use a nested selector to target the span element within it.
 
 ## Now lets discuss the pros and cons of sass scss
+
 ## Pros :
+
 1. Includes many dynamic CSS features like extending, nesting, and mixins
 2. CSS styles can be written with much less boilerplate over plain CSS
+
 ## Cons :
+
 1. Easy to write
 2. Like plain CSS, styles are global and not scoped to any one component
 3. CSS stylesheets is starting to include a number of features that SASS had exclusively, such as CSS variables (not necessarily a con, but worth noting)
 4. SASS / SCSS often requires setup, such as installing the Node library node-sass.
 
-
 # CSS Modules
+
 CSS Modules is a library that allows us to write CSS stylesheets that are scoped to a single component.
 CSS modules are another slight alternative to something like CSS or SASS.
 
 What is great about CSS modules is that they can be used with either normal CSS or SASS. Plus, if you are using Create React App you can start using CSS modules with no setup at all.
 
 Here is our application written with CSS modules:
+
 ```css
 /* src/styles.module.css */
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   font-size: 1rem;
   font-weight: 1.5;
@@ -475,25 +468,26 @@ body {
   font-weight: 400;
 }
 ```
+
 ```js
-import styles from './styles.module.css';
+import styles from "./styles.module.css";
 
 export default function App() {
   return (
     <section className={styles.testimonial}>
-      <div className={styles['testimonial-wrapper']}>
+      <div className={styles["testimonial-wrapper"]}>
         <img
           src="https://randomuser.me/api/portraits/women/48.jpg"
           alt="Tammy Stevens"
-          className={styles['testimonial-avatar']}
+          className={styles["testimonial-avatar"]}
         />
         <div>
-          <p className={styles['testimonial-quote']}>
+          <p className={styles["testimonial-quote"]}>
             This is one of the best developer blogs on the planet! I read it
             daily to improve my skills.
           </p>
         </div>
-        <p className={styles['testimonial-name']}>
+        <p className={styles["testimonial-name"]}>
           Tammy Stevens
           <span> · Front End Developer</span>
         </p>
@@ -502,6 +496,7 @@ export default function App() {
   );
 }
 ```
+
 Our CSS file has the name .module in it before the extension .css. Any CSS module file must have the name "module" in it and end in the appropriate extension (if we are using CSS or SASS/SCSS).
 
 What is interesting to note if we look at the code above is that CSS modules are written just like normal CSS, but are imported and used as if it were created as objects (inline styles).
@@ -511,25 +506,29 @@ The benefit of CSS modules is that it helps avoid our problem of class conflicts
 Our generated HTML elements will look like this:
 
 ```html
-<p class="_styles__testimonial-name_309571057">
-  Tammy Stevens
-</p>
+<p class="_styles__testimonial-name_309571057">Tammy Stevens</p>
 ```
+
 Plus, CSS modules solve the problem of global scope in CSS. As compared to our normal CSS stylesheets, CSS declared using modules to individual components will not cascade to child components.
 
 Therefore, CSS modules are best to use over CSS and SASS to make sure classes don't conflict and to write predictable styles that only apply to one or another component.
 
 ## Now lets discuss the pros and cons of css modules
+
 ## Pros :
+
 1. Styles are scoped to one or another component (unlike CSS / SASS)
 2. Unique, generated classnames ensure no style conflict
 3. Can use them immediately without setup in CRA projects
-3. Can be used with SASS / CSS
+4. Can be used with SASS / CSS
+
 ## Cons :
+
 1. Can be tricky to reference classnames
 2. May be a learning curve to use CSS styles like object properties
 
 # CSS in JS
+
 Similar to how React allowed us to write HTML as JavaScript with JSX, CSS-in-JS has done something similar with CSS.
 
 CSS-in-JS allows us to write CSS styles directly in our components' javascript (.js) files.
@@ -566,6 +565,7 @@ export default function App() {
   );
 }
 ```
+
 ![30 Days of React banner](../images/click.jpeg)
 
 Note a few things here:
@@ -584,8 +584,8 @@ Pass the inverted prop to our second button and in Button, you can access all pr
 import styled from "styled-components";
 
 const Button = styled.button`
-  background: ${props => props.inverted ? "limegreen" : "white"};
-  color: ${props => props.inverted ? "white" : "limegreen"};
+  background: ${(props) => (props.inverted ? "limegreen" : "white")};
+  color: ${(props) => (props.inverted ? "white" : "limegreen")};
   border: 2px solid limegreen;
   font-size: 1em;
   margin: 1em;
@@ -606,6 +606,7 @@ export default function App() {
   );
 }
 ```
+
 In the return of the function, you can select the inverted prop and use a ternary to conditionally determine the color of the background and text.
 
 Here is the result:
@@ -619,16 +620,18 @@ Be sure to check out the two most popular CSS-in-JS libraries for React: Emotion
 One downside to using a CSS-in-JS libraries is adding an additional library to your project. However, I would argue this is easily worth the improved developer experience you have when styling your React apps versus plain CSS.
 
 ## Now lets discuss the pros and cons of css in js
+
 ## Pros :
+
 1. CSS-in-JS is predictable – styles are scoped to individual components
 2. Since our CSS is now JS, we can export, reuse, and even extend our styles through props
 3. CSS-in-JS libraries ensure there are no styling conflicts by generating unique classnames for your written styles
 4. No need to focus on naming conventions for your classes, just write styles!
 
 ## Cons :
+
 1. CSS-in-JS libraries can be a bit tricky to learn
 2. May be a learning curve to use CSS styles like object properties
 3. Unlike plain CSS, you will need to install one or more third-party JavaScript libraries, which will add weight to your built project
-
 
 [<< Day 2](../Day_2_Resume_builder/Day_2_Resume_builder.md) | [Day 4 >>](../Day_4_props/Day_4_props.md)

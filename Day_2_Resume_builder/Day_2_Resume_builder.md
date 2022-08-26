@@ -18,7 +18,6 @@
     - [Framing Points](#framing-points)
     - [Star format](#star-format)
     - [Grouping and Highlighting](#grouping-and-highlighting)
-    
   - [Key Skills Section of Your React JS Developer Resume](#key-skills-section-of-your-react-js-developer-resume)
     - [Add Academic Details to Demonstrate Your Theoretical Knowledge](#add-academic-details-to-demonstrate-your-theoretical-knowledge)
     - [React JS Developer Resume: Certifications](#react-js-developer-resume-certifications)
@@ -34,14 +33,13 @@ The popularity of React.js is higher than other frameworks, making it a very pro
 ![30 Days of React banner](../images/popularity.jpeg)
 
 ## 1. How do I write a resume for a React js developer?
-Now that you know how to approach resume writing the right way, we will now discuss the resume sections you should use to organize information in your resume for React js developer jobs.
 
+Now that you know how to approach resume writing the right way, we will now discuss the resume sections you should use to organize information in your resume for React js developer jobs.
 
 1. Header
 2. Experience
 3. Key Skills
 4. Academic Details
-
 
 <!-- If you have more information to put in your React js experience resume, you can compile them under these resume sections:
 
@@ -54,6 +52,7 @@ Now that you know how to approach resume writing the right way, we will now disc
 To avoid the hassle of curating resume sections on your own, use Hiration's resume builder. It has an in-built React js resume template with pre-arranged sections that are positioned right where they should be.
 
 Moreover, you can use it as the perfect reference to draft an impeccable React js experience resume that is earmarked for perfection.
+
 ## 2. Begin Your Resume with the Introductory Sections
 
 The resume header, profile title, and personal information sections are the first three sections you should compose in your React js resume.
@@ -77,9 +76,8 @@ The personal information section of your React js sample resume should ideally c
 3. Current Location
 4. Link to websites/Linkedin/Github
 
-
-
 ## Add a Profile Title to Your React JS Developer Resume
+
 The profile title is the third section of your React js sample resume. Here's what makes it important:
 
 1. It communicates your current/last-held job title.
@@ -101,14 +99,14 @@ Here's an example of a React js resume sample illustrating a correctly written p
 ![30 Days of React banner](../images/title.jpeg)
 
 ## Highlight Key Points in Your React JS Developer Resume
- When recruiters browse through your resume, they evaluate three key sections:
+
+When recruiters browse through your resume, they evaluate three key sections:
 
 1. Professional Experience
 2. Key Skills
-4. These two sections are also known as the three key sections of your resume. You need to perfect these sections to impress the recruiter.
+3. These two sections are also known as the three key sections of your resume. You need to perfect these sections to impress the recruiter.
 
 We will now show you how to do this. Let's begin.
-
 
 # 3. Spruce Up Your Professional Experience Section
 
@@ -133,7 +131,7 @@ Framing points simply means using one-liner points to communicate the details of
 1. Paragraphs make your resume look bulky and cluttered. It also makes your content hard to read and harder to comprehend.
 2. On the contrary, using one-liner points is considered a better alternative to using paragraphs. It is reader-friendly and helps you communicate information effectively.
 3. A recruiter will not read your resume in totality if it is not reader-friendly.
-4 .Moreover, using one-liner points also makes it easier for an ATS to parse your resume as it can be easily read & interpreted by the recruitment software.
+   4 .Moreover, using one-liner points also makes it easier for an ATS to parse your resume as it can be easily read & interpreted by the recruitment software.
 
 ## STAR Format
 
@@ -155,7 +153,7 @@ Instead of formulating your statements in this manner:
 1. Debugged codes & improved software
 
 Rephrase it and present it in your resume in the following way:
- 
+
 2. Debugged application codes and improved interface software to improve functionality and performance by 50%
 
 ## Grouping and Highlighting
@@ -229,7 +227,6 @@ If you don't have any relevant certifications, we advise you to sign up for an o
 
 Here's a React js resume example demonstrating the ideal certifications section for your resume:
 
-
 ## Key Takeaways
 
 Here are the key takeaways of our React JS developer resume 2022 guide:
@@ -244,7 +241,9 @@ Here are the key takeaways of our React JS developer resume 2022 guide:
 8. Write a perfect React js resume professional summary advocating your suitability for the job. The best way to do this is by presenting your achievements.
 
 # Exercises
-## Now its your turn to add some components in your resume.   
+
+## Now its your turn to add some components in your resume.
+
 Some of the components are given below:
 
 1. Internships
@@ -253,7 +252,6 @@ Some of the components are given below:
 4. Awards & Recognition
 5. Volunteering Experience
 
-
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 1](../Day1_Intro_to_react/Day1_Intro_to_react.md) | [Day 3 >>](../day3_React_css/day3_css.md)
+[<< Day 1](../Day1_Intro_to_react/Day1_Intro_to_react.md) | [Day 3 >>](../day_3_React_css/day3_css.md)
