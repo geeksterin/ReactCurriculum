@@ -634,4 +634,4 @@ One downside to using a CSS-in-JS libraries is adding an additional library to y
 2. May be a learning curve to use CSS styles like object properties
 3. Unlike plain CSS, you will need to install one or more third-party JavaScript libraries, which will add weight to your built project
 
-[<< Day 2](../Day_2_Resume_builder/Day_2_Resume_builder.md) | [Day 4 >>](../Day_4_props/Day_4_props.md)
+[<< Day 1](../Day_1_Resume_builder/Day_1_Resume_builder.md) | [Day 3 >>](../Day_3_props/Day_3_props.md)

@@ -538,4 +538,4 @@ If you see a problem or a typo, please fork, make the necessary changes, and cre
 <img src="https://s3.amazonaws.com/devmountain/readme-logo.png" width="250">
 </p> -->
 
-[<< Day 4](../Day_4_props/Day_4_props.md) | [Day 6 >>](../06_Day_Map_List_Keys/06_map_list_keys.md)
+[<< Day 3](../Day_3_props/Day_3_props.md) | [Day 5 >>](../Day_5_MappingArrays/Day_5_MappingArrays.md)

@@ -1601,4 +1601,4 @@ Now, you have a very good understanding of how to create JSX elements and also h
 
 🎉 CONGRATULATIONS ! 🎉
 
-[Day 2 >>](../Day_2_Resume_builder/Day_2_Resume_builder.md)
+[Day 1 >>](../Day_1_Resume_builder/Day_1_Resume_builder.md)
