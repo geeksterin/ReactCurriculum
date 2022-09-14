@@ -8,7 +8,7 @@
   <!-- </a> -->
 
 <!-- <sub>Author: -->
-<!-- <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br> -->
+<!-- <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Geekster</a><br> -->
 
 <!-- <small> August, 2022</small> -->
 </sub>
@@ -36,7 +36,7 @@
 - [Exercises](#exercises)
   - [Exercises: Level 1](#exercises-level-1)
   - [Exercises: Level 2](#exercises-level-2)
-  - [Exercises: Level 3](#exercises-level-3)
+  <!-- - [Exercises: Level 3](#exercises-level-3) -->
 
 # Setting Up
 
@@ -299,8 +299,8 @@ const header = (
     <h1>Welcome to 30 Days Of React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
-    <p>Asabeneh Yetayeh</p>
-    <small>Oct 2, 2020</small>
+    <p>Geekster</p>
+    <small>Sept 14,2022</small>
   </header>
 );
 const rootElement = document.getElementById("root");
@@ -324,8 +324,8 @@ const header = (
     <h1>Welcome to 30 Days Of React</h1>
     <h2>Getting Started React</h2>
     <h3>JavaScript Library</h3>
-    <p>Asabeneh Yetayeh</p>
-    <small>Oct 2, 2020</small>
+    <p>Geekster</p>
+    <small>Sept 14,2022</small>
   </header>
 );
 
@@ -390,8 +390,8 @@ const header = (
       <h1>Welcome to 30 Days Of React</h1>
       <h2>Getting Started React</h2>
       <h3>JavaScript Library</h3>
-      <p>Asabeneh Yetayeh</p>
-      <small>Oct 2, 2020</small>
+      <p>Geekster</p>
+      <small>Sept 14,2022</small>
     </div>
   </header>
 );
@@ -450,7 +450,7 @@ const header = (
       <h1>Welcome to 30 Days Of React</h1>
       <h2>Getting Started React</h2>
       <h3>JavaScript Library</h3>
-      <p>Instructor: Asabeneh Yetayeh</p>
+      <p>Instructor: Geekster</p>
       <small>Date: Oct 1, 2020</small>
     </div>
   </header>
@@ -517,7 +517,7 @@ const author = {
   firstName: "Asabeneh",
   lastName: "Yetayeh",
 };
-const date = "Oct 2, 2020";
+const date = "Sept 14,2022";
 
 // JSX element, header
 const header = (
@@ -624,7 +624,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(user, rootElement);
 ```
 
-![Rendering image](../images/rendering_image.png)
+<!-- ![Rendering image](../images/rendering_image.png) -->
 
 Let's inject the user inside the main JSX element and see the result:
 
@@ -642,7 +642,7 @@ const author = {
   firstName: "Asabeneh",
   lastName: "Yetayeh",
 };
-const date = "Oct 2, 2020";
+const date = "Sept 14,2022";
 
 // JSX element, header
 const header = (
@@ -732,9 +732,9 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(app, rootElement);
 ```
 
-![All JSX together final](../images/all_jsx_final.png)
+<!-- ![All JSX together final](../images/all_jsx_final.png)
 
-The boilerplate code can be found [here](../03/../03_Day_Setting_Up/30-days-of-react_boilerplate)
+The boilerplate code can be found [here](../03/../03_Day_Setting_Up/30-days-of-react_boilerplate) -->
 
 # Exercises
 
@@ -759,12 +759,6 @@ The boilerplate code can be found [here](../03/../03_Day_Setting_Up/30-days-of-r
 2. Use h1, p, input and button HTML elements to create the following design using JSX
 
 ![News Letter](../images/news_letter_design.png)
-
-## Exercises: Level 3
-
-1. Design the following user card.
-
-![User Card](../images/user_card_design_jsx.png)
 
 🎉 CONGRATULATIONS ! 🎉
 

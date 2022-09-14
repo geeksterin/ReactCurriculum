@@ -8,7 +8,7 @@
   <!-- </a> -->
 
 <!-- <sub>Author: -->
-<!-- <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br> -->
+<!-- <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Geekster</a><br> -->
 
 <!-- <small> August, 2022</small> -->
 </sub>
@@ -50,7 +50,7 @@ So, let us change all the JSX to components. Components in React are JavaScript 
 
 In the previous section we agreed, that a website or an application is made of buttons, forms, texts, media objects, header, section, article and footer. If we have a million-dollar button, we can use this button all the time, instead of recreating it all over again, whenever we need a button. The same goes for input fields, forms, header or footer. That is where the power of the component comes. In the following diagram, the header, main and footer are components. Inside the main there is also a user card component and a text section component. All the different colors represent different components. How many colors do you see? Each color represent a single component. We have five components in this diagram.
 
-![Components](../images/components_example.png)
+<!-- ![Components](../images/components_example.png) -->
 
 Before we jump into React components, let's do some functions and class refreshers.
 
@@ -147,8 +147,8 @@ const header = (
       <h1>Welcome to 30 Days Of React</h1>
       <h2>Getting Started React</h2>
       <h3>JavaScript Library</h3>
-      <p>Asabeneh Yetayeh</p>
-      <small>Oct 3, 2020</small>
+      <p>Geekster</p>
+      <small>Sept 14,2022</small>
     </div>
   </header>
 );
@@ -167,8 +167,8 @@ const Header = () => {
         <h1>Welcome to 30 Days Of React</h1>
         <h2>Getting Started React</h2>
         <h3>JavaScript Library</h3>
-        <p>Asabeneh Yetayeh</p>
-        <small>Oct 3, 2020</small>
+        <p>Geekster</p>
+        <small>Sept 14,2022</small>
       </div>
     </header>
   );
@@ -182,8 +182,8 @@ const Header = () => (
       <h1>Welcome to 30 Days Of React</h1>
       <h2>Getting Started React</h2>
       <h3>JavaScript Library</h3>
-      <p>Asabeneh Yetayeh</p>
-      <small>Oct 3, 2020</small>
+      <p>Geekster</p>
+      <small>Sept 14,2022</small>
     </div>
   </header>
 );
@@ -191,7 +191,9 @@ const Header = () => (
 
 ### Rendering components
 
-Now, lets change all the JSX elements we had to components. When we call JSX element we use curly brackets and when we call components we do as follows <ComponentName />. If we pass an attribute, when we call the component name, we call it props(<ComponentName propsName = {'data-type'} />). We will talk about props in another section.[Live on code pen](https://codepen.io/Asabeneh/full/wvaKKEM)
+Now, lets change all the JSX elements we had to components. When we call JSX element we use curly brackets and when we call components we do as follows <ComponentName />. If we pass an attribute, when we call the component name, we call it props(<ComponentName propsName = {'data-type'} />). We will talk about props in another section.
+
+<!-- [Live on code pen](https://codepen.io/Asabeneh/full/wvaKKEM) -->
 
 Let's render first the _Header_ component.
 
@@ -207,8 +209,8 @@ const Header = () => (
       <h1>Welcome to 30 Days Of React</h1>
       <h2>Getting Started React</h2>
       <h3>JavaScript Library</h3>
-      <p>Asabeneh Yetayeh</p>
-      <small>Oct 3, 2020</small>
+      <p>Geekster</p>
+      <small>Sept 14,2022</small>
     </div>
   </header>
 );
@@ -233,8 +235,8 @@ const Header = () => (
       <h1>Welcome to 30 Days Of React</h1>
       <h2>Getting Started React</h2>
       <h3>JavaScript Library</h3>
-      <p>Asabeneh Yetayeh</p>
-      <small>Oct 3, 2020</small>
+      <p>Geekster</p>
+      <small>Sept 14,2022</small>
     </div>
   </header>
 );
@@ -243,7 +245,7 @@ const Header = () => (
 const UserCard = () => (
   <div className="user-card">
     <img src={asabenehImage} alt="asabeneh image" />
-    <h2>Asabeneh Yetayeh</h2>
+    <h2>Geekster</h2>
   </div>
 );
 
@@ -290,7 +292,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-![Rendering Components](../images/rendering_componnets.png)
+<!-- ![Rendering Components](../images/rendering_componnets.png) -->
 
 ### Injecting data to JSX in React Component
 
@@ -307,7 +309,7 @@ const title = "Getting Started React";
 const subtitle = "JavaScript Library";
 const firstName = "Asabeneh";
 const lastName = "Yetayeh";
-const date = "Oct 3, 2020";
+const date = "Sept 14,2022";
 
 // JSX element, header
 const header = () => {
@@ -425,7 +427,7 @@ const Footer = () => (
   </footer>
 );
 
-// JSX element, app
+// JSX element,
 const app = () => (
   <div className="app">
     <Header />
@@ -512,9 +514,9 @@ ReactDOM.render(<HexaColor />, rootElement);
 
 ![Hexadecimal colors](../images/hexadecimal_color_exercise.png)
 
-2. Use functional component to design the following user card.
+<!-- 2. Use functional component to design the following user card.
 
-   ![User Card](../images/user_card_design_jsx.png)
+   ![User Card](../images/user_card_design_jsx.png) -->
 
 🎉 CONGRATULATIONS ! 🎉
 
