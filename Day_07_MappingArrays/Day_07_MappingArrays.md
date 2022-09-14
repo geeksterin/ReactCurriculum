@@ -282,8 +282,9 @@ ReactDOM.render(<App />, rootElement);
 
 ![Number Generator](../images/day_6_hexadecimal_colors_exercise.png)
 
-[<< Day 4](../Day_4_MiniProject/Day_4_MiniProject.md) | [Day 6 >>](../Day_6_States/Day_6_States.md)
 
 🎉 CONGRATULATIONS ! 🎉
+
+[<< Day 6](../Day_06_MiniProject/Day_06_MiniProject.md) | [Day 6 >>](../Day_08_States/Day_08_States.md)
 
 <!-- [Day 5 >>](../Day_5_MiniProject/Day_5_MiniProject.md) -->

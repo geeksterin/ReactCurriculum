@@ -206,4 +206,4 @@ It should have the following functunalities:
 - decrement
 - reset
 
-[<< Day 5 ](../Day_5_MappingArrays/Day_5_MappingArrays.md) | [ Day 7 >> ]()
+[<< Day 7 ](../Day_07_MappingArrays/Day_07_MappingArrays.md) | [ Day 9 >> ]()

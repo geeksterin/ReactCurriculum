@@ -1137,4 +1137,4 @@ root.render(<Greeting />);
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 2](../Day_2_React_Css/Day_2_css.md) | [Day 4 >>](../Day_4_MiniProject/Day_4_MiniProject.md)
+[<< Day 4](../Day_04_React_Css/Day_04_React_Css.md) | [Day 6 >>](../Day_06_MiniProject/Day_06_MiniProject.md)
