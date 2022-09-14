@@ -70,14 +70,140 @@ const MyComponent = () => {
 };
 ```
 
+# Now let us see if we were to make a couter app wothout using states in react , how would that look:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="States.css" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Counter</h1>
+      <span id="counter">0</span>
+      <div class="btn-container">
+        <button class="btn increase">Increase</button>
+      </div>
+    </div>
+
+    <script src="States.js"></script>
+  </body>
+</html>
+```
+
+```js
+// buttons and counter text
+const counter = document.querySelector("#counter");
+const btns = document.querySelectorAll(".btn");
+
+// initialize the count variable
+let count = 0;
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const styles = e.currentTarget.classList;
+
+    styles.contains("increase");
+    count++;
+    counter.classList.add("up");
+
+    counter.textContent = count;
+  });
+});
+```
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+span {
+  font-size: 100px;
+  padding: 10px;
+  color: grey;
+}
+
+.btn {
+  background: none;
+  outline: none;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+```
+
 **States are those variables which are tracked by React, updating which will trigger a component re-render.**
 **observable - tracked.**
 **change the behaviour/output of the component - component re-rendering.**
+
+## As you can see the js code , we are adding an event listener and storing it in an vaibale called const.
+
+## inshort , a lot of reudundant and hectic work is being done while implementing this simple function, and think of examples where the project size is large and you have to implement the same functunality where you have to re-render a piece of functunality again and again.
+
+# Thats is why we use states .
+
+## below is the same functunalty but this time it is being done with the help of states
+
+```js
+import "./App.css";
+import { useState } from "react";
+
+function App() {
+  const tracable = useState(0);
+  const counter = tracable[0];
+  const update = tracable[1];
+  const fn = () => {
+    update((current_val) => {
+      const new_val = current_val + 1;
+      return new_val;
+    });
+  };
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <button onClick={fn}>Click me</button>
+        <p>clicked: {counter} times</p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
+- When we invoke the function of useState. It will retuen an array of 2 elements.
+- The 0th index will contain the tracked variable.(tracable)
+- If this variable is updated, it will trigger a component re-rendering.(update)
 
 # Exercises
 
 ## Counter-App
 
-- You have to Implement a counter App which will keep track of the numbers of clicks a user has made on a button
+## You have to Implement a counter App which will keep track of the numbers of clicks a user has made on a button
+
+It should have the following functunalities:
+
+- increment
+- decrement
+- reset
 
 [<< Day 5 ](../Day_5_MappingArrays/Day_5_MappingArrays.md) | [ Day 7 >> ]()
