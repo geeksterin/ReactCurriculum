@@ -762,4 +762,4 @@ The boilerplate code can be found [here](../03/../03_Day_Setting_Up/30-days-of-r
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 1](../Day_01_Components/Day_01_Components.md) | [Day 3 >>](../Day_03_Resume_builder/Day_03_Resume_builder.md)
+[<< Day 2](../Day_02_Components/Day_02_Components.md) | [Day 4 >>](../Day_04_Resume_builder/Day_04_Resume_builder.md)

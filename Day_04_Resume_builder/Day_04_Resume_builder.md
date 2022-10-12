@@ -254,4 +254,4 @@ Some of the components are given below:
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 2](../Day_02_Npm_Structure/Day_02_Npm_Structure.md) | [Day 4 >>](../Day_04_React_Css/Day_04_React_Css.md)
+[<< Day 3](../Day_03_Npm_Structure/Day_03_Npm_Structure.md) | [Day 5 >>](../Day_05_React_Css/Day_05_React_Css.md)

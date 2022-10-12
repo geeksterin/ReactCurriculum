@@ -1601,4 +1601,4 @@ Now, you have a very good understanding of how to create JSX elements and also h
 
 🎉 CONGRATULATIONS ! 🎉
 
-[Day 1 >>](../Day_01_Components/Day_01_Components.md)
+[<< Day 0](../Day_00_Refresher_to_JS_ES6/Day_00_ES6_ES7.md) | [Day 2 >>](../Day_02_Components/Day_02_Components.md)
