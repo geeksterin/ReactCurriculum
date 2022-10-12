@@ -1,0 +1,157 @@
+/* ============
+DEFAULTS
+================*/
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #e7e6e1;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ul {
+    color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  p {
+    font-family: "Amiri", serif;
+  }
+  h1,
+  h2,
+  a {
+    font-family: "Playfair Display", serif;
+  }
+  /* ============
+  NAV
+  ================*/
+  #nav {
+    background-color: black;
+    height: 5rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+  }
+  
+  #nav ul li {
+    height: 100%;
+    font-size: 26px;
+    padding-top: 20px;
+  }
+  #nav ul li:hover {
+    background-color: #e7e6e1;
+    color: #000;
+    cursor: pointer;
+  }
+  /*  SECTION 1 */
+  #section1 {
+    text-align: center;
+  }
+  
+  #title h1 {
+    font-size: 30px;
+  }
+  #title p {
+    font-size: 22px;
+    font-style: italic;
+  }
+  #image {
+    max-width: 400px;
+    height: 500px;
+    box-shadow: 10px 5px 9px 5px #cccccc;
+  }
+  #image:hover {
+    padding: 2rem;
+  }
+  #img-2 {
+    text-align: center;
+  }
+  #img-2 img {
+    height: 450px;
+  }
+  #img-2 p {
+    font-size: 12px;
+  }
+  /*  #tribute-info */
+  #tribute-info {
+    padding: 10px;
+  }
+  #tribute-info p,
+  .quote-lines {
+    font-size: 22px;
+    padding: 0 2px 0 2rem;
+  }
+  .quote-lines {
+    font-style: italic;
+  }
+  /*  FOOTER */
+  ##tribute-link-p {
+    font-size: 15px;
+  }
+  footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer ul li {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+  }
+  
+  footer a:hover {
+    background-color: #e7e6e1;
+    color: #000;
+    padding: 5px;
+  }
+  footer p {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+  }
+  footer li {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 700px) {
+    #image {
+      height: 400px;
+      width: 300px;
+    }
+    #title {
+      margin-top: 5px;
+    }
+    #img-div {
+      align-items: center;
+      margin: auto;
+    }
+    
+    ul li h2 {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 422px) {
+    #nav a{
+      font-size:18px;
+      font-weight:bold;
+    }
+    #img-2 img{
+      height:300px;
+      width:250px;
+    }
+   
+  }
+  
