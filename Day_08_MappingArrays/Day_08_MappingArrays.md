@@ -285,6 +285,6 @@ ReactDOM.render(<App />, rootElement);
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 6](../Day_06_MiniProject/Day_06_MiniProject.md) | [Day 6 >>](../Day_08_States/Day_08_States.md)
+[<< Day 7](../Day_07_MiniProject/Day_07_MiniProject.md) | [Day 9 >>](../Day_09_States/Day_09_States.md)
 
 <!-- [Day 5 >>](../Day_5_MiniProject/Day_5_MiniProject.md) -->

@@ -520,4 +520,4 @@ ReactDOM.render(<HexaColor />, rootElement);
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 0](../Day_00_Intro_to_react/Day_00_Intro_to_react.md) | [Day 2 >>](../Day_02_Npm_Structure/Day_02_Npm_Structure.md)
+[<< Day 1](../Day_01_Intro_to_react/Day_01_Intro_to_react.md) | [Day 3 >>](../Day_03_Npm_Structure/Day_03_Npm_Structure.md)

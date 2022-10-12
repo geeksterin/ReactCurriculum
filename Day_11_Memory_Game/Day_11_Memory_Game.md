@@ -15,4 +15,4 @@ We can’t make a game unless we know the rules. So lets state them here:
 - Once all pairs are found out, players sees a confirmation dialog with the score.
   Game provides a functionality to restart.
 
-[<< Day 9 ](../Day_09_Password_generator/Day_09_Password_generator.md) | [ Day 11 >> ]()
+[<< Day 10 ](../Day_10_Password_generator/Day_10_Password_generator.md) | [ Day 11 >> ]()
