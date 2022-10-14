@@ -10,3 +10,5 @@
 - Symbols Included
 
 # User can choose a length of the PW with Uppercase, Lowercase, Numeric and symbol included.
+
+![alt text](../../../images/passgenerator.png)
